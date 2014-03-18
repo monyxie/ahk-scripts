@@ -15,13 +15,6 @@
 
 #z::Run www.google.com/ncr
 
-^!n::
-IfWinExist 无标题 - 记事本
-	WinActivate
-else
-	Run Notepad
-return
-
 #IfWinActive, grepWin
 {
   Esc::!F4
@@ -33,7 +26,7 @@ return
   $F1::^+Tab
   $F2::^Tab
   $F4::^t
-  $F9::^j
+  $F7::^j
 }
 
 #IfWinActive, ahk_class ConsoleWindowClass
